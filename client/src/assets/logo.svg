@@ -1,29 +1,55 @@
-<svg width="320" height="80" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg" fill="none">
-  <!-- Gradient -->
+<svg width="360" height="100" viewBox="0 0 360 100" xmlns="http://www.w3.org/2000/svg" fill="none">
+  
+  <!-- Gradient Definitions -->
   <defs>
-    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#6366F1"/>
+    <linearGradient id="orbitGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7C3AED"/>
       <stop offset="100%" stop-color="#06B6D4"/>
     </linearGradient>
+
+    <radialGradient id="coreGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </radialGradient>
   </defs>
 
-  <!-- Icon -->
+  <!-- ICON -->
   <g transform="translate(10,10)">
-    <!-- Outer orbit -->
-    <circle cx="30" cy="30" r="22" stroke="url(#grad)" stroke-width="2" opacity="0.5"/>
     
-    <!-- Inner orbit -->
-    <ellipse cx="30" cy="30" rx="22" ry="10" stroke="url(#grad)" stroke-width="2" opacity="0.7"/>
-    
+    <!-- Outer Orbit (rotated ellipse) -->
+    <ellipse cx="40" cy="40" rx="30" ry="18"
+      stroke="url(#orbitGrad)" stroke-width="2.5"
+      transform="rotate(25 40 40)" opacity="0.8"/>
+
+    <!-- Second Orbit -->
+    <ellipse cx="40" cy="40" rx="30" ry="18"
+      stroke="url(#orbitGrad)" stroke-width="2.5"
+      transform="rotate(-25 40 40)" opacity="0.6"/>
+
+    <!-- Node Points -->
+    <circle cx="65" cy="30" r="3.5" fill="#06B6D4"/>
+    <circle cx="20" cy="55" r="3.5" fill="#7C3AED"/>
+
     <!-- Core -->
-    <circle cx="30" cy="30" r="6" fill="url(#grad)"/>
+    <circle cx="40" cy="40" r="10" fill="url(#coreGrad)"/>
+
   </g>
 
-  <!-- Text -->
-  <text x="80" y="50" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#111827" font-weight="600">
+  <!-- TEXT -->
+  <text x="100" y="60"
+    font-family="Poppins, Inter, sans-serif"
+    font-size="36"
+    font-weight="600"
+    fill="#0F172A">
     Omni
   </text>
-  <text x="155" y="50" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="url(#grad)" font-weight="600">
+
+  <text x="195" y="60"
+    font-family="Poppins, Inter, sans-serif"
+    font-size="36"
+    font-weight="600"
+    fill="url(#orbitGrad)">
     .ai
   </text>
+
 </svg>
