@@ -9,7 +9,7 @@ const Footer = () => {
                     <div className='max-w-80'>
                         <img src={assets.logo} alt="logo" className='mb-4 h-8 md:h-9' />
                         <p className='mt-6 text-sm'>
-                        Experience the power of AI with QuickAi. <br />
+                        Experience the power of AI with One.Ai. <br />
         Transform your content creation with our suite of premium AI tools.
         Write articles, generate images, and enhance your workflow.
                         </p>
