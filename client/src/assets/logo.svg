@@ -1,49 +1,27 @@
-<svg width="168" height="43" viewBox="0 0 360 100" xmlns="http://www.w3.org/2000/svg" fill="none">
-
-  <!-- Gradients -->
-  <defs>
-    <linearGradient id="orbitGrad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#7C3AED"/>
-      <stop offset="100%" stop-color="#06B6D4"/>
-    </linearGradient>
-
-    <radialGradient id="coreGrad" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#A78BFA"/>
-      <stop offset="100%" stop-color="#4F46E5"/>
-    </radialGradient>
-  </defs>
-
-  <!-- ICON (scaled tighter) -->
-  <g transform="translate(5,15) scale(0.6)">
-    <ellipse cx="40" cy="40" rx="30" ry="18"
-      stroke="url(#orbitGrad)" stroke-width="3"
-      transform="rotate(25 40 40)" opacity="0.9"/>
-
-    <ellipse cx="40" cy="40" rx="30" ry="18"
-      stroke="url(#orbitGrad)" stroke-width="3"
-      transform="rotate(-25 40 40)" opacity="0.7"/>
-
-    <circle cx="65" cy="30" r="4" fill="#06B6D4"/>
-    <circle cx="20" cy="55" r="4" fill="#7C3AED"/>
-
-    <circle cx="40" cy="40" r="11" fill="url(#coreGrad)"/>
+<svg width="168" height="43" viewBox="0 0 168 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g id="Logo-Icon">
+    <path d="M18.5 4L33.6554 12.75V30.25L18.5 39L3.34455 30.25V12.75L18.5 4Z" stroke="#5044E5" stroke-width="4" stroke-linejoin="round"/>
+    
+    <path d="M18.5 12V31" stroke="#5044E5" stroke-width="4" stroke-linecap="round"/>
+    <path d="M12 21L18.5 12L25 21" stroke="#5044E5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <circle cx="18.5" cy="21.5" r="3" fill="#818CF8">
+        <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+    </circle>
   </g>
 
-  <!-- TEXT (properly aligned) -->
-  <text x="55" y="28"
-    font-family="Poppins, Inter, sans-serif"
-    font-size="20"
-    font-weight="600"
-    fill="#0F172A">
-    Omni
-  </text>
+  <g id="Logo-Text">
+    <text x="48" y="32" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="32" font-weight="800" fill="#111827" style="letter-spacing: -1.5px;">
+      One<tspan fill="#5044E5">.ai</tspan>
+    </text>
+  </g>
 
-  <text x="110" y="28"
-    font-family="Poppins, Inter, sans-serif"
-    font-size="20"
-    font-weight="600"
-    fill="url(#orbitGrad)">
-    .ai
-  </text>
-
+  <rect x="48" y="37" width="110" height="1.5" rx="0.75" fill="url(#line_grad)" fill-opacity="0.2"/>
+  
+  <defs>
+    <linearGradient id="line_grad" x1="48" y1="37" x2="158" y2="37" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5044E5"/>
+      <stop offset="1" stop-color="#818CF8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
 </svg>
